@@ -1,18 +1,18 @@
 export const presidents = [
     {
        title: 'Build President',
-       names: 'Aditya Saini',
-       image: '/exec_images/saini_image.png',
+       names: 'Shridhar Garg',
+       image: '/exec_images/shridhar.png',
     },
     {
        title: 'Build President',
-       names: 'Adi Chawathe',
-       image: '/exec_images/adi_image.png',
+       names: 'Medhansh Gada',
+       image: '/exec_images/medhansh.png',
     },
     {
        title: 'Administrative President',
-       names: 'Anumeha Haldar',
-       image: '/exec_images/anumeha_image.png',
+       names: 'Trisha Panchangmath',
+       image: '/exec_images/trisha.png',
     },
  ];
  
@@ -23,23 +23,23 @@ export const subteams = [
        members: [
           {
              title: 'Programming Captain',
-             image: '/exec_images/tanish_image.png',
-             name: 'Tanish Mittal',
+             image: '/exec_images/dhairya.png',
+             name: 'Dhairya Sarvaiya',
           },
           {
              title: 'Programming Captain',
-             image: '/exec_images/amruth_image.png',
-             name: 'Amruth Nadinpally',
+             image: '/exec_images/rohan.png',
+             name: 'Rohan Saxena',
           },
           {
              title: 'Programming Captain',
-             image: '/exec_images/dhariya_image.png',
-             name: 'Dhariya Sarvaiya',
+             image: '/exec_images/abhinav.png',
+             name: 'Abhinav Senthilkumar',
           },
           {
-             title: 'Strategy Coordinator',
-             image: '/exec_images/ved_image.png',
-             name: 'Ved Dwivedi',
+             title: 'Programming Captain',
+             image: '/exec_images/placeholder.png',
+             name: 'Sarthak Kumar',
           },
        ],
     },
@@ -49,23 +49,28 @@ export const subteams = [
        members: [
           {
              title: 'Mech Captain',
-             image: '/exec_images/ishaan_image.png',
-             name: 'Ishaan Brahma',
+             image: '/exec_images/ishaan.png',
+             name: 'Ishaan Ghai',
           },
           {
              title: 'Mech Captain',
-             image: '/exec_images/padole_image.png',
-             name: 'Mahik Padole',
+             image: '/exec_images/shastha.png',
+             name: 'Shastha Venkatesh',
           },
           {
              title: 'Mech Captain',
-             image: '/exec_images/jahnavi_image.png',
+             image: '/exec_images/jahnavi.png',
              name: 'Jahnavi Singh',
           },
           {
+             title: 'Mech Captain',
+             image: '/exec_images/dhairya1.png',
+             name: 'Dhairya Punatar',
+          },
+          {
              title: 'Safety Captain',
-             image: '/exec_images/shastha_image.png',
-             name: 'Shastha Venkatesh',
+             image: '/exec_images/mandar.png',
+             name: 'Mandar Padole',
           },
        ],
     },
@@ -75,13 +80,18 @@ export const subteams = [
        members: [
           {
              title: 'Electrical Captain',
-             image: '/exec_images/kavish_image.png',
-             name: 'Kavish Goel',
+             image: '/exec_images/priya.png',
+             name: 'Priya Patel',
           },
           {
              title: 'Electrical Captain',
-             image: '/exec_images/harris_image.png',
-             name: 'Harris Nazeer',
+             image: '/exec_images/harshil.png',
+             name: 'Harshil Kakabalia',
+          },
+          {
+             title: 'Electrical Captain',
+             image: '/exec_images/olivia.png',
+             name: 'Olivia Dutta',
           },
        ],
     },
@@ -91,18 +101,33 @@ export const subteams = [
           'The operations team has many tasks, such as finding grants, impact, and some programming tasks (like this website)',
        members: [
           {
-             title: 'Programming Captain',
-             image: '/exec_images/abir_image.png',
-             name: 'Abir Modak',
+             title: 'Operations Manager',
+             image: '/exec_images/namya.png',
+             name: 'Namya Purani',
           },
           {
-             title: 'PR Manager',
-             image: '/exec_images/oliva_image.png',
+             title: 'Programming Captain',
+             image: '/exec_images/placeholder.png',
+             name: 'Neerav Gupta',
+          },
+          {
+             title: 'Visual Production',
+             image: '/exec_images/placeholder.png',
+             name: 'Prathmesh Ghorpade',
+          },
+          {
+             title: 'Funding Manager',
+             image: '/exec_images/aayushi.png',
+             name: 'Aayushi Juthani',
+          },
+          {
+             title: 'Outreach Coordinator',
+             image: '/exec_images/olivia.png',
              name: 'Oivia Dutta',
           },
           {
-             title: 'Mentoring Liasons',
-             image: '/exec_images/meer_image.png',
+             title: 'PR Manager',
+             image: '/exec_images/meer.png',
              name: 'Meer Patel',
           },
        ],
@@ -145,6 +170,7 @@ export const subteamCaptains = [
  ];
  
 export const legacyPresidents = [
+    { year: '2025', names: 'Aditya Saini, Adi Chawathe, Anumeha Haldar' },
     { year: '2024', names: 'Sai Voruganti, Krishan Trikha, Naishadh Patel' },
     { year: '2023', names: 'Nazmin Abbasi & Vivek Isukapalli' },
     { year: '2022', names: 'Vian Miranda, Priya Abiram, Soham Chawathe' },

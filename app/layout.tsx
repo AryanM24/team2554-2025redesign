@@ -8,8 +8,11 @@ import Footer from '@/components/footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Warhawks FRC Team 2554 - JPS Robotics',
+  title: 'The Warhawks: 2554',
   description: 'John P. Stevens High School FIRST Robotics Team',
+  icons: {
+    icon: '/logo.jpeg',
+  },
 }
 
 export default function RootLayout({

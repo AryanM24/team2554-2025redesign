@@ -1,6 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/about/page": "app/about/page.js",
-  "/sponsors/page": "app/sponsors/page.js",
   "/executive-board/page": "app/executive-board/page.js"
 }
