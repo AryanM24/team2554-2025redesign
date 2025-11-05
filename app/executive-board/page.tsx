@@ -14,7 +14,7 @@ export default function ExecutiveBoardPage() {
                   The Executive Board
                </h1>
                <p className="text-center mt-2 text-gray-300">
-                  This is our 2024-2025 Robotics Executive Board
+                  This is our 2025-2026 Robotics Executive Board
                </p>
             </Container>
          </section>
@@ -87,11 +87,10 @@ export default function ExecutiveBoardPage() {
                                  >
                                     <CardContent className="p-0 flex flex-col h-full">
                                        {/* Image container with responsive visibility */}
-                                       <div className="aspect-[4/5] w-full relative bg-neutral-700 overflow-hidden hidden sm:block">
+                                       <div className="aspect-[4/5] w-full relative bg-neutral-700 sm:block">
                                           <Image
                                              src={
-                                                member.image ||
-                                                '/placeholder.svg'
+                                                member.image
                                              }
                                              alt={`${member.name} - ${member.title}`}
                                              fill
