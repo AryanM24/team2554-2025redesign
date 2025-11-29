@@ -14,7 +14,7 @@ export default function SponsorsPage() {
         <Container>
           <h1 className="text-4xl font-bold text-center text-white">Sponsors</h1>
           <p className="text-center mt-2 text-gray-300">
-            This is our 2024-2025 Robotics Executive Board
+            Check out our amazing sponsors who help make our season possible!
           </p>
         </Container>
       </section>

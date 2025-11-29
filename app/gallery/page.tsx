@@ -29,32 +29,32 @@ const GalleryImage = ({ src, alt, caption }: { src: string; alt: string; caption
 // Gallery images array with captions
 const galleryImages = [
   {
-    src: '/placeholder.svg',
-    alt: 'Competition 2024',
-    caption: 'Our team competing at the 2024 FRC Regional Championship'
+    src: '/Lehigh.jpg',
+    alt: 'FRC State Championship',
+    caption: 'Our team competing at the 2024-25 FRC State Championship at Lehigh University'
   },
   {
-    src: '/placeholder.svg',
+    src: '/Build.jpg',
     alt: 'Build Season',
     caption: 'Students working together during the 2024 build season'
   },
   {
-    src: '/placeholder.svg',
+    src: '/Outreach.jpeg',
     alt: 'Outreach Event',
-    caption: 'Team 2554 at the local STEM fair inspiring future engineers'
+    caption: 'Team 2554 hosting a hackathon for students worldwide'
   },
   {
-    src: '/placeholder.svg',
+    src: '/Workshop.jpg',
     alt: 'Team Workshop',
     caption: 'Working on the robot\'s mechanical systems'
   },
   {
-    src: '/placeholder.svg',
-    alt: 'Awards Ceremony',
-    caption: 'Celebrating our Engineering Inspiration Award'
+    src: '/Optimum.jpg',
+    alt: 'Optimum Visit',
+    caption: 'Displayed our robot to sponsors from Optimum'
   },
   {
-    src: '/placeholder.svg',
+    src: '/Meeting.jpg',
     alt: 'Team Meeting',
     caption: 'Weekly strategy meeting with all subteams'
   },

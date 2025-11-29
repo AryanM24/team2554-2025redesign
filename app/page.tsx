@@ -144,7 +144,7 @@ export default function Home() {
                      <CardHeader className="space-y-4">
                         <div className="overflow-hidden rounded-t-lg">
                            <Image
-                              src="/placeholder.svg"
+                              src="/STEM.jpg"
                               alt="JPS STEM Day"
                               width={300}
                               height={200}
@@ -166,7 +166,7 @@ export default function Home() {
                      <CardHeader className="space-y-4">
                         <div className="overflow-hidden rounded-t-lg">
                            <Image
-                              src="/placeholder.svg"
+                              src="/HackJPS.jpeg"
                               alt="Hack.JPS'25"
                               width={300}
                               height={200}

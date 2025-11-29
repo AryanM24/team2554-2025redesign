@@ -10,7 +10,7 @@ const infoCards = [
   {
     title: "FIRST Robotics",
     description: "To find more information about the FIRST Robotics Competition (FRC) click the link below.",
-    imageUrl: "https://www.firstinspires.org/sites/default/files/open-graph-first-logo.png",
+    imageUrl: "/FIRST_logo.png",
     imageAlt: "FIRST Robotics Logo",
     buttonText: "FIRST ROBOTICS",
     buttonLink: "#",
@@ -55,7 +55,7 @@ export default function InfoPage() {
         <Container>
           <h1 className="text-4xl font-bold text-center text-white">Information and Updates</h1>
           <p className="text-center mt-2 text-gray-300">
-            lorem ipsum lorem ipsum etc. etc. oh yea
+            Find more information about Team 2554 and FIRST Robotics below.
           </p>
         </Container>
       </section>
@@ -65,13 +65,13 @@ export default function InfoPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {infoCards.map((card, index) => (
-              <Card key={index} className="p-6 bg-neutral-800 border-neutral-700">
+              <Card key={index} className="p-6 bg-neutral-800 border-neutral-700 justify-center items-center flex justify-between w-full">
                 <CardContent className="space-y-6">
                   <div className={`${card.containerClass} p-8 rounded-lg flex justify-center items-center`}>
                     {card.type === 'image' ? (
                       <Image
-                        src={card.imageUrl}
-                        alt={card.imageAlt}
+                        src={card.imageUrl || ''}
+                        alt={card.imageAlt || 'Info Image'}
                         width={300}
                         height={150}
                         className="w-full h-auto"

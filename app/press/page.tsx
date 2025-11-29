@@ -50,7 +50,7 @@ export default function PressPage() {
         <Container>
           <h1 className="text-4xl font-bold text-center text-white">Press Coverage</h1>
           <p className="text-center mt-2 text-gray-300">
-            lorem ipsum lorem ipsum etc. etc. oh yea
+            Look at what others are saying about us!
           </p>
         </Container>
       </section>
