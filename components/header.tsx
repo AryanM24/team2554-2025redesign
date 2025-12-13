@@ -31,7 +31,7 @@ const allNavItems = [...mainNavItems, ...moreNavItems]
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-neutral-800 bg-black mb-0 pb-0">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-800 bg-[#040404] mb-0 pb-0">
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
@@ -90,7 +90,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent 
               side="right" 
-              className="bg-black border-neutral-800"
+              className="bg-[#040404] border-neutral-800"
             >
               <nav className="flex flex-col space-y-2 mt-4">
                 {allNavItems.map(({ href, label }) => (

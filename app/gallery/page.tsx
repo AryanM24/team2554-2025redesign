@@ -17,6 +17,7 @@ const GalleryImage = ({ src, alt, caption, date }: { src: string; alt: string; c
           alt={alt}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-4">
           <h3 className="text-white font-bold text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -34,41 +35,31 @@ const GalleryImage = ({ src, alt, caption, date }: { src: string; alt: string; c
   )
 }
 
-// Gallery images array with captions and dates
+// Gallery images array with captions and dates - using images from repo
 const galleryImages = [
   {
     id: 1,
-    src: '/placeholder.svg',
-    alt: 'Competition 2024',
-    caption: 'Our team competing at the 2024 FRC Regional Championship',
-    date: 'March 2024',
-    year: 2024,
-    month: 3,
-    category: 'Competition'
-  },
-  {
-    id: 2,
-    src: '/placeholder.svg',
+    src: '/Build.jpg',
     alt: 'Build Season',
-    caption: 'Students working together during the 2024 build season',
+    caption: 'Students working together during build season',
     date: 'January 2024',
     year: 2024,
     month: 1,
     category: 'Build Season'
   },
   {
-    id: 3,
-    src: '/placeholder.svg',
-    alt: 'Outreach Event',
-    caption: 'Team 2554 at the local STEM fair inspiring future engineers',
+    id: 2,
+    src: '/Meeting.jpg',
+    alt: 'Team Meeting',
+    caption: 'Weekly strategy meeting with all subteams',
     date: 'February 2024',
     year: 2024,
     month: 2,
-    category: 'Outreach'
+    category: 'Team'
   },
   {
-    id: 4,
-    src: '/placeholder.svg',
+    id: 3,
+    src: '/Workshop.jpg',
     alt: 'Team Workshop',
     caption: 'Working on the robot\'s mechanical systems',
     date: 'December 2023',
@@ -77,30 +68,40 @@ const galleryImages = [
     category: 'Workshop'
   },
   {
-    id: 5,
-    src: '/placeholder.svg',
-    alt: 'Awards Ceremony',
-    caption: 'Celebrating our Engineering Inspiration Award',
-    date: 'April 2024',
+    id: 4,
+    src: '/Outreach.jpeg',
+    alt: 'Outreach Event',
+    caption: 'Team 2554 at the local STEM fair inspiring future engineers',
+    date: 'February 2024',
     year: 2024,
-    month: 4,
-    category: 'Awards'
+    month: 2,
+    category: 'Outreach'
+  },
+  {
+    id: 5,
+    src: '/STEM.jpg',
+    alt: 'STEM Day',
+    caption: 'Demonstrating our robot at the school science fair',
+    date: 'March 2024',
+    year: 2024,
+    month: 3,
+    category: 'Outreach'
   },
   {
     id: 6,
-    src: '/placeholder.svg',
-    alt: 'Team Meeting',
-    caption: 'Weekly strategy meeting with all subteams',
-    date: 'November 2023',
-    year: 2023,
-    month: 11,
-    category: 'Team'
+    src: '/HackJPS.jpeg',
+    alt: 'Hack.JPS',
+    caption: 'Our annual hackathon where students collaborate and innovate',
+    date: 'April 2024',
+    year: 2024,
+    month: 4,
+    category: 'Outreach'
   },
   {
     id: 7,
-    src: '/placeholder.svg',
-    alt: 'Robot Testing',
-    caption: 'Testing autonomous routines before competition',
+    src: '/Lehigh.JPG',
+    alt: 'Lehigh Competition',
+    caption: 'Competing at Lehigh University',
     date: 'March 2024',
     year: 2024,
     month: 3,
@@ -108,23 +109,63 @@ const galleryImages = [
   },
   {
     id: 8,
-    src: '/placeholder.svg',
-    alt: 'Community Event',
-    caption: 'Demonstrating our robot at the school science fair',
-    date: 'February 2024',
+    src: '/about_us_images/about_us_front.jpg',
+    alt: 'Team Photo',
+    caption: 'Team 2554 The Warhawks',
+    date: '2024',
     year: 2024,
-    month: 2,
-    category: 'Outreach'
+    month: 1,
+    category: 'Team'
   },
   {
     id: 9,
-    src: '/placeholder.svg',
-    alt: 'Design Review',
-    caption: 'Presenting our robot design to mentors',
+    src: '/about_us_images/mech_image.jpg',
+    alt: 'Mechanical Team',
+    caption: 'Mechanical team working on robot design',
     date: 'January 2024',
     year: 2024,
     month: 1,
-    category: 'Workshop'
+    category: 'Build Season'
+  },
+  {
+    id: 10,
+    src: '/about_us_images/elec_image.jpg',
+    alt: 'Electrical Team',
+    caption: 'Electrical team organizing the electrical board',
+    date: 'January 2024',
+    year: 2024,
+    month: 1,
+    category: 'Build Season'
+  },
+  {
+    id: 11,
+    src: '/about_us_images/prog_image.JPG',
+    alt: 'Programming Team',
+    caption: 'Programming team developing robot code',
+    date: 'January 2024',
+    year: 2024,
+    month: 1,
+    category: 'Build Season'
+  },
+  {
+    id: 12,
+    src: '/about_us_images/prog_image_2.JPG',
+    alt: 'Programming Team Work',
+    caption: 'Students working on autonomous routines',
+    date: 'February 2024',
+    year: 2024,
+    month: 2,
+    category: 'Build Season'
+  },
+  {
+    id: 13,
+    src: '/about_us_images/prog_image_3.jpg',
+    alt: 'Programming Session',
+    caption: 'Collaborative programming session',
+    date: 'February 2024',
+    year: 2024,
+    month: 2,
+    category: 'Build Season'
   },
 ]
 
@@ -158,7 +199,7 @@ export default function GalleryPage() {
   }, [searchQuery, selectedYear, selectedMonth])
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#040404]">
       {/* Hero Section */}
       <section className="bg-green-700 py-12 text-white border-b border-green-600">
         <Container>
@@ -170,10 +211,10 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-[#040404]">
         <Container>
-          {/* Filters */}
-          <div className="flex flex-col md:flex-row gap-4 items-center mb-8">
+          {/* Filters - Hidden on mobile */}
+          <div className="hidden md:flex flex-col md:flex-row gap-4 items-center mb-8">
             {/* Search Input */}
             <div className="relative flex-1 w-full md:w-auto">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />

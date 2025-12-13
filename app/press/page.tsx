@@ -57,7 +57,7 @@ export default function PressPage() {
   const sidebarArticles = pressArticles.slice(2)
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#040404]">
       {/* Hero Banner */}
       <section className="bg-green-700 py-12 border-b border-green-600">
         <Container>
@@ -69,24 +69,24 @@ export default function PressPage() {
       </section>
 
       {/* Press Articles */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-[#040404]">
         <Container>
           {/* Featured Article */}
-          <Link href={featuredArticle.link} className="block mb-12 group">
+          <Link href={featuredArticle.link} className="block mb-12">
             <div className="border border-neutral-800 bg-neutral-900 overflow-hidden">
               <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
                 <Image
                   src={featuredArticle.image}
                   alt={featuredArticle.title}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 md:p-8">
                 <p className="text-gray-400 text-sm mb-3">
                   {featuredArticle.date} VIA {featuredArticle.source.toUpperCase()}
                 </p>
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-green-500 transition-colors">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                   {featuredArticle.title}
                 </h2>
                 <p className="text-gray-300 mb-4 max-w-3xl">
@@ -99,21 +99,21 @@ export default function PressPage() {
           {/* Secondary Articles - Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Secondary Article - Left Column */}
-            <Link href={secondaryArticle.link} className="lg:col-span-2 block group">
+            <Link href={secondaryArticle.link} className="lg:col-span-2 block">
               <div className="border border-neutral-800 bg-neutral-900 overflow-hidden h-full">
                 <div className="relative w-full h-[300px] overflow-hidden">
                   <Image
                     src={secondaryArticle.image}
                     alt={secondaryArticle.title}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <p className="text-gray-400 text-sm mb-3">
                     {secondaryArticle.date} VIA {secondaryArticle.source.toUpperCase()}
                   </p>
-                  <h2 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-green-500 transition-colors">
+                  <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
                     {secondaryArticle.title}
                   </h2>
                   <p className="text-gray-300 mb-4">
@@ -126,7 +126,7 @@ export default function PressPage() {
             {/* Sidebar Articles - Right Column */}
             <div className="space-y-6">
               {sidebarArticles.map((article, index) => (
-                <Link key={index} href={article.link} className="block group">
+                <Link key={index} href={article.link} className="block">
                   <div className="border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <div className="flex gap-4 p-4">
                       <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden">
@@ -134,14 +134,14 @@ export default function PressPage() {
                           src={article.image}
                           alt={article.title}
                           fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="object-cover"
                         />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-gray-400 text-xs mb-2">
                           {article.date} VIA {article.source.toUpperCase()}
                         </p>
-                        <h3 className="text-sm md:text-base font-bold text-white mb-2 line-clamp-2 group-hover:text-green-500 transition-colors">
+                        <h3 className="text-sm md:text-base font-bold text-white mb-2 line-clamp-2">
                           {article.title}
                         </h3>
                       </div>

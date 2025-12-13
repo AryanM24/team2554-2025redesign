@@ -11,11 +11,6 @@ body {
     text-wrap: balance;
   }
   
-  .animate-cell-ripple {
-    animation: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
-    animation-fill-mode: none;
-  }
-  
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -103,7 +98,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-black text-foreground;
+    @apply bg-[#040404] text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold text-white;
@@ -122,14 +117,3 @@ body {
   }
 }
 
-@keyframes cell-ripple {
-  0% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}

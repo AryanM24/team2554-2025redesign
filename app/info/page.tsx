@@ -33,7 +33,7 @@ const infoCards = [
     imageAlt: "Team 2554 Logo",
     buttonText: "TEAM 2554 MERCH STORE",
     buttonLink: "#",
-    containerClass: "bg-black",
+    containerClass: "bg-[#040404]",
     type: "image"
   },
   {
@@ -49,7 +49,7 @@ const infoCards = [
 
 export default function InfoPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#040404]">
       {/* Hero Banner */}
       <section className="bg-green-700 py-12 text-white">
         <Container>
@@ -61,7 +61,7 @@ export default function InfoPage() {
       </section>
 
       {/* Info Grid */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-[#040404]">
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {infoCards.map((card, index) => (

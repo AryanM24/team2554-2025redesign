@@ -46,7 +46,7 @@ const subteams = [
 
 export default function AboutPage() {
    return (
-      <div className="flex flex-col min-h-screen bg-black">
+      <div className="flex flex-col min-h-screen bg-[#040404]">
          {/* Hero Banner */}
          <section className="bg-green-700 py-12 text-white">
             <Container>
@@ -60,7 +60,7 @@ export default function AboutPage() {
          </section>
 
          {/* Team Overview Section */}
-         <section className="py-16 bg-black hidden sm:block">
+         <section className="py-16 bg-[#040404] hidden sm:block">
             <Container>
                <div className="grid md:grid-cols-2 gap-8 items-stretch">
                   <Card className="bg-neutral-800 border-neutral-700 overflow-hidden h-full">
@@ -87,7 +87,7 @@ export default function AboutPage() {
                            </p>
                         </div>
                         <div className="grid grid-cols-3 gap-4 w-full mt-8">
-                           <div className="text-center p-4 bg-neutral-700 rounded-lg hover:bg-neutral-600 transition-colors duration-300 transform hover:scale-105">
+                           <div className="text-center p-4 bg-neutral-700 rounded-lg">
                               <div className="text-2xl font-bold text-white">
                                  10+
                               </div>
@@ -95,7 +95,7 @@ export default function AboutPage() {
                                  Years of Innovation
                               </div>
                            </div>
-                           <div className="text-center p-4 bg-neutral-700 rounded-lg hover:bg-neutral-600 transition-colors duration-300 transform hover:scale-105">
+                           <div className="text-center p-4 bg-neutral-700 rounded-lg">
                               <div className="text-2xl font-bold text-white">
                                  4
                               </div>
@@ -103,7 +103,7 @@ export default function AboutPage() {
                                  Subteams
                               </div>
                            </div>
-                           <div className="text-center p-4 bg-neutral-700 rounded-lg hover:bg-neutral-600 transition-colors duration-300 transform hover:scale-105">
+                           <div className="text-center p-4 bg-neutral-700 rounded-lg">
                               <div className="text-2xl font-bold text-white">
                                  1
                               </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                         </div>
                      </CardContent>
                   </Card>
-                  <div className="rounded-lg overflow-hidden h-full shadow-lg shadow-neutral-950/20 transform transition-transform duration-300 hover:scale-[1.02]">
+                  <div className="rounded-lg overflow-hidden h-full shadow-lg shadow-neutral-950/20">
                      <div className="relative w-full h-full">
                         <Image
                            src="/about_us_images/about_us_front.jpg"
@@ -129,7 +129,7 @@ export default function AboutPage() {
          </section>
 
          {/* Subteams Section */}
-         <section className="py-16 bg-black">
+         <section className="py-16 bg-[#040404]">
             <Container>
                <div className="text-center mb-16">
                   <h2 className="text-3xl font-bold text-white mb-3">
@@ -184,7 +184,7 @@ export default function AboutPage() {
                               index % 2 === 0 ? 'md:order-2' : 'md:order-1'
                            }`}
                         >
-                           <div className="transform transition-transform duration-300 hover:scale-[1.02] h-full">
+                           <div className="h-full">
                               <Image
                                  src={team.image}
                                  alt={`${team.name} at Work`}

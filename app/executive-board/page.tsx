@@ -6,7 +6,7 @@ import { legacyPresidents, subteams, presidents } from '@/lib/execBoard';
 
 export default function ExecutiveBoardPage() {
    return (
-      <div className="flex flex-col min-h-screen bg-black">
+      <div className="flex flex-col min-h-screen bg-[#040404]">
          {/* Hero Banner */}
          <section className="bg-green-700 py-12 text-white">
             <Container>
@@ -20,7 +20,7 @@ export default function ExecutiveBoardPage() {
          </section>
 
          {/* Leadership Section */}
-         <section className="py-16 bg-black">
+         <section className="py-16 bg-[#040404]">
             <Container>
                <div className="grid md:grid-cols-3 gap-8">
                   {presidents.map((president, index) => (
@@ -50,7 +50,7 @@ export default function ExecutiveBoardPage() {
          </section>
 
          {/* Subteam Captains Section */}
-         <section className="py-16 bg-black">
+         <section className="py-16 bg-[#040404]">
             <Container>
                <div className="max-w-4xl mx-auto space-y-12">
                   {subteams.map((subteam, index) => {
@@ -120,7 +120,7 @@ export default function ExecutiveBoardPage() {
          </section>
 
          {/* Legacy Section */}
-         <section className="py-16 bg-black">
+         <section className="py-16 bg-[#040404]">
             <Container>
                <div className="max-w-3xl mx-auto border-2 border-dashed border-yellow-500 rounded-lg p-8">
                   <h2 className="text-3xl font-bold text-center mb-4 text-white">

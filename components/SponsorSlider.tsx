@@ -61,8 +61,7 @@ export default function SponsorSlider() {
           {/* Arrows are positioned here via CSS */}
         </div>
         <Button
-          variant="outline"
-          className="bg-green-700 text-white hover:bg-green-600 transform transition-all duration-200 hover:scale-105 hover:shadow-lg"
+          className="bg-green-700 hover:bg-green-600 text-white hover:text-white transition-colors duration-200"
           asChild
         >
           <Link href="/sponsors">See more...</Link>
