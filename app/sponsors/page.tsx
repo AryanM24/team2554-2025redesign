@@ -8,7 +8,7 @@ import { sponsors } from '@/lib/sponsors'
 
 export default function SponsorsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-neutral-900">
+    <div className="flex flex-col min-h-screen bg-black">
       {/* Hero Banner */}
       <section className="bg-green-700 py-12 text-white">
         <Container>
@@ -20,7 +20,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Sponsors List */}
-      <section className="py-16 bg-neutral-900">
+      <section className="py-16 bg-black">
         <Container>
           <div className="space-y-6 max-w-4xl mx-auto">
             {sponsors.map((sponsor, index) => (
@@ -49,7 +49,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Become a Sponsor */}
-      <section className="py-16 bg-neutral-800">
+      <section className="py-16 bg-black">
         <Container>
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold text-white">How to Become a Sponsor</h2>

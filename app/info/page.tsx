@@ -49,7 +49,7 @@ const infoCards = [
 
 export default function InfoPage() {
   return (
-    <div className="min-h-screen bg-neutral-900">
+    <div className="min-h-screen bg-black">
       {/* Hero Banner */}
       <section className="bg-green-700 py-12 text-white">
         <Container>
@@ -61,7 +61,7 @@ export default function InfoPage() {
       </section>
 
       {/* Info Grid */}
-      <section className="py-16 bg-neutral-900">
+      <section className="py-16 bg-black">
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {infoCards.map((card, index) => (

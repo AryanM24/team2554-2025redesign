@@ -46,7 +46,7 @@ const subteams = [
 
 export default function AboutPage() {
    return (
-      <div className="flex flex-col min-h-screen bg-neutral-900">
+      <div className="flex flex-col min-h-screen bg-black">
          {/* Hero Banner */}
          <section className="bg-green-700 py-12 text-white">
             <Container>
@@ -60,7 +60,7 @@ export default function AboutPage() {
          </section>
 
          {/* Team Overview Section */}
-         <section className="py-16 bg-neutral-900 hidden sm:block">
+         <section className="py-16 bg-black hidden sm:block">
             <Container>
                <div className="grid md:grid-cols-2 gap-8 items-stretch">
                   <Card className="bg-neutral-800 border-neutral-700 overflow-hidden h-full">
@@ -69,7 +69,7 @@ export default function AboutPage() {
                            <div className="flex items-center space-x-4">
                               <div className="relative w-16 h-16 overflow-hidden rounded-full bg-neutral-700">
                                  <Image
-                                    src="/jps.jpeg"
+                                    src="/jps.png"
                                     alt="JPS Robotics Logo"
                                     fill
                                     className="object-cover"
@@ -129,7 +129,7 @@ export default function AboutPage() {
          </section>
 
          {/* Subteams Section */}
-         <section className="py-16 bg-neutral-800">
+         <section className="py-16 bg-black">
             <Container>
                <div className="text-center mb-16">
                   <h2 className="text-3xl font-bold text-white mb-3">
@@ -200,39 +200,7 @@ export default function AboutPage() {
             </Container>
          </section>
 
-         {/* Documentation Section */}
-         <section className="py-16 bg-neutral-900">
-            <Container>
-               <div className="border-2 border-dashed border-yellow-500 rounded-lg p-8 hover:border-yellow-400 transition-colors duration-300">
-                  <div className="flex flex-col md:flex-row items-center gap-8 justify-center">
-                     <div className="w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
-                        <Image
-                           src="/warhawks_logo_ad.png"
-                           alt="Team Logo"
-                           width={200}
-                           height={200}
-                           className="rounded-lg w-full h-auto"
-                        />
-                     </div>
-                     <div className="w-full md:w-2/3 space-y-4 text-center md:text-left">
-                        <h2 className="text-2xl font-bold text-white">
-                           Want to learn more?
-                        </h2>
-                        <p className="text-gray-300">
-                           Click the button below to view our detailed
-                           documentation of EVERYTHING you need to know about
-                           Team 2554!
-                        </p>
-                        <Link href="https://docs.jpsrobotics2554.org/">
-                           <Button className="bg-green-700 hover:bg-green-800 mt-5">
-                              Team 2554 Official Documentation
-                           </Button>
-                        </Link>
-                     </div>
-                  </div>
-               </div>
-            </Container>
-         </section>
+         
       </div>
    );
 }

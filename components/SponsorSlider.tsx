@@ -2,7 +2,9 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Slider from 'react-slick'
+import { Button } from '@/components/ui/button'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import '../styles/sponsor-slider.css'
@@ -37,22 +39,36 @@ export default function SponsorSlider() {
   }
 
   return (
-    <Slider {...settings} className="sponsor-slider">
-      {sponsors.map((sponsor, index) => (
-        <div key={index} className="px-2">
-          <div className="bg-white p-4 rounded-lg shadow">
-            <Image
-              src={sponsor.logo}
-              alt={sponsor.name}
-              width={300}
-              height={200}
-              className="w-full h-48 object-contain"
-            />
-            <p className="text-center mt-2 text-gray-600">{sponsor.name}</p>
+    <div>
+      <Slider {...settings} className="sponsor-slider">
+        {sponsors.map((sponsor, index) => (
+          <div key={index} className="px-2">
+            <div className="bg-white p-4 rounded-lg shadow">
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                width={300}
+                height={200}
+                className="w-full h-48 object-contain"
+              />
+              <p className="text-center mt-2 text-gray-600">{sponsor.name}</p>
+            </div>
           </div>
+        ))}
+      </Slider>
+      <div className="flex justify-between items-center mt-4">
+        <div className="flex gap-2 h-10">
+          {/* Arrows are positioned here via CSS */}
         </div>
-      ))}
-    </Slider>
+        <Button
+          variant="outline"
+          className="bg-green-700 text-white hover:bg-green-600 transform transition-all duration-200 hover:scale-105 hover:shadow-lg"
+          asChild
+        >
+          <Link href="/sponsors">See more...</Link>
+        </Button>
+      </div>
+    </div>
   )
 }
 

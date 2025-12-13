@@ -1,4 +1,4 @@
-// File: /Users/neerav/Desktop/Neerav Gupta/Team-2554-Website_Redesign/app/executive-board/page.tsx
+// File: /Users/aryanmittal/Team-2554-Website_Redesign/app/executive-board/page.tsx
 import * as entry from '../../../../app/executive-board/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

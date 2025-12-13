@@ -1,3 +1,8 @@
 {
-  "/executive-board/page": "app/executive-board/page.js"
+  "/about/page": "app/about/page.js",
+  "/page": "app/page.js",
+  "/sponsors/page": "app/sponsors/page.js",
+  "/press/page": "app/press/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/info/page": "app/info/page.js"
 }

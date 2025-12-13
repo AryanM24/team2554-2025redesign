@@ -5,54 +5,28 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Container } from '@/components/container';
 import SponsorSlider from '@/components/SponsorSlider';
+import { HeroSection } from '@/components/herosection';
+import CountdownTimer from '@/components/CountdownTimer';
+
 
 export default function Home() {
    return (
-      <div className="flex flex-col min-h-screen bg-neutral-900">
+      <div className="flex flex-col min-h-screen bg-black">
          {/* Hero Section */}
-         <section className="py-20 text-center bg-neutral-900">
-            <Container>
-               <div className="transform transition-all duration-700 hover:scale-105">
-                  <Image
-                     src="/warhawks-logo-2-smol_orig.png"
-                     alt="Warhawks Logo with Text"
-                     width={800}
-                     height={400}
-                     className="mx-auto h-auto"
-                     priority
-                  />
-               </div>
-               <p className="mt-4 text-xl text-gray-300 animate-fade-in">
-                  FRC Team 2554 - JPS Robotics
-               </p>
-               <div className="mt-8 flex justify-center gap-4">
-                  <Button
-                     className="bg-green-700 hover:bg-green-600 text-white transform transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                     asChild
-                  >
-                     <Link href="/about">Learn More</Link>
-                  </Button>
-                  <Button
-                     variant="outline"
-                     className="text-white border-white hover:bg-neutral-800 transform transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                     asChild
-                  >
-                     <Link href="/gallery">Outreach</Link>
-                  </Button>
-               </div>
-            </Container>
+         <section className="text-center bg-black pt-0.1rem">
+            <HeroSection />
          </section>
 
          {/* Team Info Section */}
-         <section className="py-16 bg-neutral-800">
+         <section className="py-16 bg-black">
             <Container>
                <div className="grid md:grid-cols-2 gap-8">
                   <Card className="overflow-hidden bg-neutral-900 border-neutral-700 h-full transition-all duration-300 hover:shadow-xl hover:border-neutral-600 group">
                      <div className="p-6 h-full flex flex-col">
                         <div className="flex items-center space-x-4 mb-4">
-                           <div className="relative w-16 h-16 rounded-full overflow-hidden bg-neutral-800 flex-shrink-0">
+                           <div className="relative w-16 h-16 overflow-hidden flex-shrink-0 ">
                               <Image
-                                 src="/jps.jpeg"
+                                 src="/jps.png"
                                  alt="JPS Robotics Logo"
                                  fill
                                  className="object-cover"
@@ -106,8 +80,47 @@ export default function Home() {
             </Container>
          </section>
 
+         {/* Sponsors Section */}
+         <section className="py-16 bg-black">
+            <Container>
+               <h2 className="text-3xl font-bold text-center mb-8 text-white">
+                  Our Sponsors
+               </h2>
+               <SponsorSlider />
+            </Container>
+         </section>
+
+         {/* Season Challenge Section */}
+         <section className="py-16 bg-black hidden md:block">
+            <Container>
+               <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="flex justify-center">
+                     <Image
+                        src="/FIRST_AGE-FRC-rebuilt-logo.png"
+                        alt="FIRST Rebuilt Challenge Logo"
+                        width={300}
+                        height={300}
+                        className="w-50 max-w-md h-auto"
+                     />
+                  </div>
+                  <div className="space-y-4">
+                     <h2 className="text-3xl font-bold text-white">
+                        2025 Season Challenge: Rebuilt
+                     </h2>
+                     <p className="text-gray-300">
+                     In REBUILT™ presented by Haas, a new challenge releasing January 10, 2026,  FIRST® Robotics Competition teams will use engineering skills and re-imagine the past.
+                     </p>
+                     <p className="text-gray-300">
+                     Every artifact we uncover holds a story. Each tool, each innovation, each work of art connects us to the people and ideas that came before us. Using STEM skills and teamwork, today we can dig deeper into discoveries than ever before.
+                     </p>
+                     <CountdownTimer />
+                  </div>
+               </div>
+            </Container>
+         </section>
+
          {/* Events Section */}
-         <section className="py-16 bg-neutral-900">
+         <section className="py-16 bg-black">
             <Container>
                <h2 className="text-3xl font-bold text-center mb-4 text-white">
                   Upcoming Events
@@ -116,10 +129,10 @@ export default function Home() {
                   We don't just compete! Participate in one of our super fun
                   outreach events!
                </p>
-               <div className="grid md:grid-cols-3 gap-6">
-                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+               <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible pb-4 md:pb-0 scrollbar-hide snap-x snap-mandatory scroll-pl-4 md:scroll-pl-0 pr-4 md:pr-0">
+                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group w-[calc(75%-12px)] md:w-auto flex-shrink-0 md:flex-shrink snap-start">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/placeholder.svg"
                               alt="Video Game Night"
@@ -140,9 +153,9 @@ export default function Home() {
                         </p>
                      </CardContent>
                   </Card>
-                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group w-[calc(75%-12px)] md:w-auto flex-shrink-0 md:flex-shrink snap-start">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/placeholder.svg"
                               alt="JPS STEM Day"
@@ -162,9 +175,9 @@ export default function Home() {
                         </p>
                      </CardContent>
                   </Card>
-                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+                  <Card className="bg-neutral-800 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group w-[calc(75%-12px)] md:w-auto flex-shrink-0 md:flex-shrink snap-start">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/placeholder.svg"
                               alt="Hack.JPS'25"
@@ -189,7 +202,7 @@ export default function Home() {
          </section>
 
          {/* Press Section */}
-         <section className="py-16 bg-neutral-800">
+         <section className="py-16 bg-black">
             <Container>
                <h2 className="text-3xl font-bold text-center mb-4 text-white">
                   Latest Press Coverage
@@ -197,10 +210,10 @@ export default function Home() {
                <p className="text-center text-gray-300 mb-8">
                   See what others are saying about Team 2554
                </p>
-               <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+               <div className="flex md:grid md:grid-cols-3 gap-6 mb-8 overflow-x-auto md:overflow-x-visible pb-4 md:pb-0 scrollbar-hide snap-x snap-mandatory scroll-pl-4 md:scroll-pl-0">
+                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group w-[calc(75%-12px)] md:w-auto flex-shrink-0 md:flex-shrink snap-start">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/visualeyes-cheddar.png"
                               alt="Cheddar News Coverage"
@@ -218,9 +231,9 @@ export default function Home() {
                         <p className="text-gray-300">Cheddar News</p>
                      </CardContent>
                   </Card>
-                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group min-w-[280px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/senatorx2554.png"
                               alt="Senator Visit Coverage"
@@ -240,9 +253,9 @@ export default function Home() {
                         </p>
                      </CardContent>
                   </Card>
-                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group">
+                  <Card className="bg-neutral-900 border-neutral-700 transform transition-all duration-300 hover:translate-y-[-8px] hover:shadow-xl group min-w-[280px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                      <CardHeader className="space-y-4">
-                        <div className="overflow-hidden rounded-t-lg">
+                        <div className="overflow-hidden">
                            <Image
                               src="/DOD-STEM.webp"
                               alt="DoD STEM Coverage"
@@ -275,58 +288,7 @@ export default function Home() {
             </Container>
          </section>
 
-         {/* Sponsors Section */}
-         <section className="py-16 bg-neutral-900">
-            <Container>
-               <h2 className="text-3xl font-bold text-center mb-8 text-white">
-                  Our Sponsors
-               </h2>
-               <SponsorSlider />
-               <div className="flex justify-center mt-8">
-                  <Button
-                     variant="outline"
-                     className="bg-green-700 text-white hover:bg-green-600 transform transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                     asChild
-                  >
-                     <Link href="/sponsors">See more...</Link>
-                  </Button>
-               </div>
-            </Container>
-         </section>
-
-         {/* Documentation Section */}
-         <section className="py-16 bg-neutral-900">
-            <Container>
-               <div className="border-2 border-dashed border-yellow-500 rounded-lg p-8 hover:border-yellow-400 transition-colors duration-300">
-                  <div className="flex flex-col md:flex-row items-center gap-8 justify-center">
-                     <div className="w-full md:w-1/3 transform transition-transform duration-300 hover:scale-105">
-                        <Image
-                           src="/warhawks_logo_ad.png"
-                           alt="Team Logo"
-                           width={200}
-                           height={200}
-                           className="rounded-lg w-full h-auto"
-                        />
-                     </div>
-                     <div className="w-full md:w-2/3 space-y-4 text-center md:text-left">
-                        <h2 className="text-2xl font-bold text-white">
-                           Want to learn more?
-                        </h2>
-                        <p className="text-gray-300">
-                           Click the button below to view our detailed
-                           documentation of EVERYTHING you need to know about
-                           Team 2554!
-                        </p>
-                        <Link href="https://docs.jpsrobotics2554.org/">
-                           <Button className="bg-green-700 hover:bg-green-800 mt-5">
-                              Team 2554 Official Documentation
-                           </Button>
-                        </Link>
-                     </div>
-                  </div>
-               </div>
-            </Container>
-         </section>
+         
       </div>
    );
 }
