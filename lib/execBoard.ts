@@ -38,7 +38,7 @@ export const subteams = [
           },
           {
              title: 'Programming Captain',
-             image: '/exec_images/placeholder.png',
+             image: '/exec_images/sarthak.png',
              name: 'Sarthak Kumar',
           },
        ],
@@ -107,12 +107,12 @@ export const subteams = [
           },
           {
              title: 'Programming Captain',
-             image: '/exec_images/placeholder.png',
+             image: '/exec_images/neerav.png',
              name: 'Neerav Gupta',
           },
           {
              title: 'Visual Production',
-             image: '/exec_images/placeholder.png',
+             image: '/exec_images/prathmesh.png',
              name: 'Prathmesh Ghorpade',
           },
           {

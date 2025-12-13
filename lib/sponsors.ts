@@ -26,7 +26,7 @@ export const sponsors = [
   },
   {
     name: "FIRST",
-    logo: "https://www.firstinspires.org/sites/default/files/uploads/resource_library/brand/thumbnails/FIRST-Icon.png",
+    logo: "/FIRST_Logo.png",
     description: "FIRST inspires young people to be science and technology leaders and innovators by engaging them in exciting mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership."
   }
 ]
